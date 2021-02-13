@@ -21,17 +21,14 @@ i = len(Numbers)
 Number = int(Numbers)
 i2 = 0
 maxNum = 0
-while True:
-    i2 += 1
+while Number != 0:
     lastNumb = Number % 10
     Number = Number // 10
-    if i == i2:
-        print(maxNum)
-        break
-    elif lastNumb > maxNum:
+    if lastNumb > maxNum:
         maxNum = lastNumb
     elif lastNumb < maxNum:
         continue
+print(maxNum)
 
 
 # Расчёт прибыли, рентабельности, прибыли в расчёте на одного сотрудника компании
