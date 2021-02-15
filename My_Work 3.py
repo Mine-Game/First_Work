@@ -25,23 +25,17 @@
 # email_s = input("Введите email: ")
 # return_f(name=name_s, phone=phone_s, adres=adres_s, email=email_s)
 ################################################################################################
-# # Получаем 3 числа от пользователя, выводим 2 максимальных числа
+# Получаем 3 числа от пользователя, выводим 2 максимальных числа
 # def my_func(First, Second, Third):
 #     my_list = [First, Second, Third]
-#     min_num = min(First, Second, Third)
-#     if min_num == First:
-#         my_list.remove(First)
-#     elif min_num == Second:
-#         my_list.remove(Second)
-#     else:
-#         my_list.remove(Third)
-#     return my_list
+#     try:
+#         my_list.remove(min(my_list))
+#         return sum(my_list)
+#     except TypeError:
+#         return "Enter only a numbers"
 #
-#
-# one = input("Введите первое число: ")
-# two = input("Введите второе число: ")
-# three = input("Введите третье число: ")
-# print(my_func(one, two, three))
+# 
+# print(my_func(2, 11, -30))
 ################################################################################################
 # # Умножение числа в степень
 # # Cложная реализация без оператора **, предусматривающая использование цикла.
@@ -96,23 +90,22 @@
 # При вводе слов в любом регистре, через пробел, система выдаёт слова, только в английском регистре,
 # делает первую букву заглавной.
 # "nice авп ъghj jапро hjjпаро вапрghgh cool" из этого выражения выводится только Nice и Coll
-rus_lower = set('abcdefghijklmnopqrstuvwxyz')
-rus_upper = set('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
-symbols = set('!?:;"., ').union("123456789")
-
-
-def title_f(text):
-    text_filter_list = []
-    for i in text:
-        if set(i).difference(set.union(rus_lower, symbols, rus_upper)):
-            continue
-        else: text_filter_list.append(i)
-    return text_filter_list
-
-
-text = input("Введите слова с маленькой буквы: ")
-text = text.title()
-text = text.split()
-text = title_f(text)
-print(text)
-
+# rus_lower = set('abcdefghijklmnopqrstuvwxyz')
+# rus_upper = set('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+# symbols = set('!?:;"., ').union("123456789")
+#
+#
+# def title_f(text):
+#     text_filter_list = []
+#     for i in text:
+#         if set(i).difference(set.union(rus_lower, symbols, rus_upper)):
+#             continue
+#         else: text_filter_list.append(i)
+#     return text_filter_list
+#
+#
+# text = input("Введите слова с маленькой буквы: ")
+# text = text.title()
+# text = text.split()
+# text = title_f(text)
+# print(text)
