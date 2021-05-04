@@ -9,14 +9,17 @@
 #     return print(salary)
 #
 #
-# name, hours, wage, prize = argv
-# try:
-#     hours = float(hours)
-#     wage = float(wage)
-#     prize = float(prize)
-#     zp(hours, wage, prize)
-# except ValueError:
-#     print("Ошибка! Нужно вводить только цифры")
+#try:
+#    name, hours, wage, prize = argv
+#    try:
+#        hours = float(hours)
+#        wage = float(wage)
+#        prize = float(prize)
+#        zp(hours, wage, prize)
+#    except ValueError:
+#        print("Ошибка! Нужно вводить только цифры")
+#except ValueError:
+#    print("Укажите значения: количество отработанных часов, заработная плата в часах, премия")
 ##################################################################################################################
 # Представлен список чисел(Генератором). Необходимо вывести элементы исходного списка, значения
 # которых больше предыдущего элемента.
